@@ -4,6 +4,8 @@ Fibonacci in lots of different languages
 `fib_recurse` is the recursive, slow version.
 `fib_optimized` is the fast, iterative version using the language's dynamically sized arrays.
 
+Each file, when run, prints the 20th fibonacci number from both versions of the method. Weird specicifities of the language should be explained in comments.
+
 ### Python Example:
 ```python
     def fib_optimized(n):
