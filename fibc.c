@@ -8,7 +8,7 @@ int fib_recurse(unsigned n){
     }
 }
 
-//fib optimized is hard without arraylists
+//no returning arrays from c
 
 int main(void){
     printf("%u", fib_recurse(20));

@@ -6,19 +6,20 @@ fn fib_recurse(n: u32) -> u32{
     }
 }
 
-pub fn fib_optimized(n: usize) -> usize{
-    let mut list = vec![1, 1];
+pub fn fib_list(n: usize) -> Vec<usize>{
+    let mut list = Vec::with_capacity(n + 1);
+    list.append(&mut vec![1, 1]);
 
     for i in list.len()..=n{
-        let num = list[i-1] + list[i-2]; //to avoid borrowing mutably and immutably on one line
+        let num = list[i - 1] + list[i - 2]; //to avoid borrowing mutably and immutably on one line
         list.push(num);
     }
 
-    list[n]
+    list
 }
 
 
 fn main(){
     println!("{}", fib_recurse(20));
-    println!("{}", fib_optimized(20));
+    println!("{:?}", fib_list(20));
 }

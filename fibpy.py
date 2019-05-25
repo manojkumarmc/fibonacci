@@ -1,8 +1,8 @@
-def fib_optimized(n):
+def fib_list(n):
     array = [1, 1]
     for i in range(2, n + 1):
         array.append(array[i - 1] + array[i - 2])
-    return array[n]
+    return array
 
 def fib_recurse(n):
     if n == 1 or n == 0:
@@ -10,5 +10,5 @@ def fib_recurse(n):
     else:
         return fib_recurse(n - 1) + fib_recurse(n - 2)
 
-print(fib_optimized(20))
 print(fib_recurse(20))
+print(fib_list(20))

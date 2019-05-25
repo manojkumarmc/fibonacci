@@ -6,15 +6,15 @@ function fib_recurse(n){
     }
 }
 
-function fib_optimized(n){
+function fib_list(n){
     var array = [1, 1];
 
     for (var i = 2; i <= n; i++){
         array.push(array[i - 1] + array[i - 2]);
     }
 
-    return array[n];
+    return array;
 }
 
 console.log(fib_recurse(20));
-console.log(fib_optimized(20));
+console.log(fib_list(20));

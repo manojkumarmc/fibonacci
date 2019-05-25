@@ -10,16 +10,19 @@ int fib_recurse(int n){
     }
 }
 
-int fib_optimized(int n){
+std::vector<int> fib_list(int n){
     std::vector<int> vec = {1, 1};
 
     for (int i = 2; i <= n; i++){
         vec.push_back(vec.at(i - 1) + vec.at(i - 2));
     }
 
-    return vec.at(n);
+    return vec;
 }
 
 int main(void){
-    cout << fib_recurse(20) << "\n" << fib_optimized(20);
+    cout << fib_recurse(20) << "\n";
+    std::vector<int> list = fib_list(20);
+    for (std::vector<int>::const_iterator i = list.begin(); i != list.end(); i++)
+        cout << *i << ", ";
 }
