@@ -6,7 +6,7 @@ fn fib_recurse(n: u32) -> u32{
     }
 }
 
-pub fn fib_list(n: usize) -> Vec<usize>{
+pub fn fib_list(n: usize) -> Vec<usize>{ //rust can't have arrays with unknown capacity, but vectors can be initialized with capacity.
     let mut list = Vec::with_capacity(n + 1);
     list.append(&mut vec![1, 1]);
 

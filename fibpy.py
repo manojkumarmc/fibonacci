@@ -1,4 +1,4 @@
-def fib_list(n):
+def fib_list(n): #python arrays are expandible by default
     array = [1, 1]
     for i in range(2, n + 1):
         array.append(array[i - 1] + array[i - 2])

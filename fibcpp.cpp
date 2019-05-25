@@ -10,7 +10,7 @@ int fib_recurse(int n){
     }
 }
 
-std::vector<int> fib_list(int n){
+std::vector<int> fib_list(int n){ //c++ can't have arrays with unknown starting capacity
     std::vector<int> vec = {1, 1};
 
     for (int i = 2; i <= n; i++){
