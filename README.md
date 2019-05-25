@@ -6,6 +6,8 @@ Fibonacci in lots of different languages
 
 Each file, when run, prints the 20th fibonacci number from both versions of the method. Weird specicifities of the language should be explained in comments.
 
+If you want to add a new language and/or improve an implementation for a current language, please do! Make sure to keep everything generally standardized though.
+
 ### Python Example:
 ```python
     def fib_optimized(n):
