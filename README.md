@@ -4,6 +4,10 @@ Fibonacci in lots of different languages
 `fib_recurse` is the recursive, slow version.
 `fib_list` returns a list of the first n fibonacci numbers and runs in O(n).
 
+Each file, when ran, prints the 20th fibonacci number from both versions of the method. Weird specicifities of the language should be explained in comments.
+
+If you want to add a new language and/or improve an implementation for a current language, please do! Make sure to keep everything generally standardized though.
+
 ### Python Example:
 ```python
 def fib_list(n):
